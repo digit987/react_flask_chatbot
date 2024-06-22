@@ -1,0 +1,270 @@
+/* General App styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: flex-end; /* Align menu to right */
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hide nav if not logged in */
+nav.hidden {
+  display: none;
+}
+
+/* Add this class for right alignment of menu */
+.menu-right {
+  margin-left: auto;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a,
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-content a:hover,
+.dropdown-content button:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* Centering form container */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.form-container h1 {
+  text-align: center;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.form-container input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+/* Signup specific styles */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.signup-container .card {
+  width: 100%;
+  max-width: 800px; /* Adjust as necessary */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.grid-item label {
+  margin-bottom: 5px;
+  text-align: center; /* Center text within label */
+}
+
+.grid-item input {
+  width: 85%; /* Adjust width as necessary */
+  padding: 8px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Login specific styles */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container .card {
+  width: 100%;
+  max-width: 400px; /* Adjust as necessary */
+}
+
+/* User Profile specific styles */
+.user-profile {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-profile h2 {
+  margin-bottom: 20px;
+}
+
+.user-profile .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.user-profile label {
+  margin-bottom: 0.5rem;
+}
+
+.user-profile .input-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile .input-container input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.user-profile button {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-profile button:hover {
+  background-color: #0056b3;
+}
