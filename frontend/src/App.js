@@ -12,7 +12,7 @@ const App = () => {
 
   const handleLogin = async (credentials) => {
     try {
-      const response = await fetch('http://pyany123.pythonanywhere.com/api/login', {
+      const response = await fetch('https://pyany123.pythonanywhere.com/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(credentials),
@@ -33,7 +33,7 @@ const App = () => {
 
   const handleSignup = async (credentials) => {
     try {
-      const response = await fetch('http://pyany123.pythonanywhere.com/api/signup', {
+      const response = await fetch('https://pyany123.pythonanywhere.com/api/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(credentials),
@@ -54,7 +54,7 @@ const App = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch('http://pyany123.pythonanywhere.com/api/logout', {
+      const response = await fetch('https://pyany123.pythonanywhere.com/api/logout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -73,7 +73,7 @@ const App = () => {
 
   const handleUpdateProfile = async (formData) => {
     try {
-      const response = await fetch('http://pyany123.pythonanywhere.com/api/update_profile', {
+      const response = await fetch('https://pyany123.pythonanywhere.com/api/update_profile', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
