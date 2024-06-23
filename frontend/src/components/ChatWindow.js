@@ -12,7 +12,7 @@ const ChatWindow = ({ currentUser, handleLogout }) => {
     if (newMessage.trim() !== '') {
       try {
         const requestBody = { message: newMessage };
-        const response = await fetch('http://pyany123.pythonanywhere.com/api/data', {
+        const response = await fetch('https://pyany123.pythonanywhere.com/api/data', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
